@@ -1,39 +1,8 @@
 # extract_genes_ABRicate
-Small script to use ABRicate output to extract genes from genome assemblies, reverse complement if necessary, and print to a file
+dejieji
 
-## Installation
 
-This script needs Python 3 with the Pandas and BioPython libraries, as well as seqtk to run. ABRicate is not necessarily needed, although the ABRicate output should include a `STRAND` column with relevent information.
 
-If you have Miniconda installed (https://docs.conda.io/en/latest/miniconda.html), these dependencies can be easily installed. First clone the directory to your machine:
-
-```
-# Clone and enter the directory
-git clone https://github.com/boasvdp/extract_genes_ABRicate.git
-cd extract_genes_ABRicate
-
-# Create a conda environment with the necessary packages
-conda env create -f env.yaml
-
-# Activate the conda environment
-conda activate env_extract_genes_ABRicate
-```
-
-Alternatively, these commands can be used to install the tools separately through conda (not in a separate environment!):
-
-```
-conda install -c conda-forge -c bioconda biopython pandas seqtk
-```
-
-## Usage
-
-```
-usage: extract_genes_abricate.py [-h] [-a ABRICATE FILE] [-g GENOMES DIR]
-                                 [-o OUTPUT DIR] [-s SUFFIX]
-
-Extract genes from genes based on ABRicate output.
-
-optional arguments:
   -h, --help            show this help message and exit
   -a ABRICATE FILE, --abricatefile ABRICATE FILE
                         ABRicate file to parse genes
