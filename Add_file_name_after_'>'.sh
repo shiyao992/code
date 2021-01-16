@@ -1,5 +1,5 @@
 #!/bin/sh
-cd /home/yao/Documents/1719genomes_Ssuis_used
+cd /home/yao/your_files/
 for file in $(ls *)
 do
     sed -i "s/>/>$file/g" $file
